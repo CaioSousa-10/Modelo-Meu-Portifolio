@@ -7,6 +7,7 @@
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,14 +20,14 @@ header {
 
 nav {
     text-align: right;
-    margin-right: 3.8rem;
+    margin-right: 2rem;
     margin-top: 0.6rem;
 }
 
 nav a{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-decoration: none;
-    color: #dedede;
+    color: grey;
     margin-left: 6.4rem;
 }
 
@@ -36,6 +37,7 @@ nav a:hover{
 
 #container-capa {
     margin-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 #container-capa div {
@@ -80,7 +82,7 @@ nav a:hover{
     padding-left: 10rem ;
     padding-right: 15rem;
     padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 
 .container h1 {
@@ -151,4 +153,5 @@ hr {
 
 #sobre-mim {
     text-align: justify;
+    line-height: 1.6;
 }
