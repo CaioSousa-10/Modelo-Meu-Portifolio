@@ -78,16 +78,22 @@ nav a:hover{
 
 .container {
     padding-left: 10rem ;
-    padding-right: 18rem;
+    padding-right: 15rem;
     padding-top: 10rem;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
 }
 
 .container h1 {
     font-size: 3.3rem;
     color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     margin-top: 1rem;
+}
+
+.container h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
 }
 
 .container h3 {
@@ -129,4 +135,20 @@ nav a:hover{
 
 .link-voltar-ao-inicio:hover {
     color: black;
+}
+
+hr {
+    border: solid 1px #fff;
+    margin-bottom: 1rem;
+}
+
+#foto-cv {
+    width: 20%;
+    float: left;
+    margin-right: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+#sobre-mim {
+    text-align: justify;
 }
