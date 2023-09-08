@@ -22,16 +22,19 @@ nav {
     text-align: right;
     margin-right: 2rem;
     margin-top: 0.6rem;
+
+    animation-name: navegacao;
+    animation-duration: 4s;
 }
 
-nav a{
+nav a {
     font-size: 1.6rem;
     text-decoration: none;
     color: grey;
     margin-left: 6.4rem;
 }
 
-nav a:hover{
+nav a:hover {
     color: #e46e0d;
 }
 
@@ -47,12 +50,18 @@ nav a:hover{
 .profile-pic {
     margin-left: 9.6rem;
     padding-top: 1rem;
+
+    animation-name: profile-capa;
+    animation-duration: 2s;
 }
 
 .profile-title {
     padding-top: 11rem;
     padding-left: 4.5rem;
     vertical-align: top;
+
+    animation-name: title-capa;
+    animation-duration: 2s;
 }
 
 .profile-title h1 {
@@ -77,12 +86,65 @@ nav a:hover{
     width: 87.5%;
 }
 
+@keyframes profile-capa {
+    0% {
+        transform: translate(0px, 20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes title-capa {
+    0% {
+      transform: translate(0px, -20px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes navegacao {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes conteudo {
+    0% {
+      opacity: 0;
+      transform: translate(-20px, 0px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+  }
+
 
 .container {
-    padding-left: 10rem ;
+    padding-left: 10rem;
     padding-right: 15rem;
     padding-top: 10rem;
     padding-bottom: 10rem;
+
+    animation-name: conteudo;
+    animation-duration: 2s;
 }
 
 .container h1 {
@@ -163,7 +225,7 @@ hr {
     border-radius: 1rem;
 }
 
-.miniatura a{
+.miniatura a {
     text-decoration: none;
 }
 
@@ -186,7 +248,7 @@ hr {
     padding-top: 7rem;
 }
 
-.blackbox-text h2{
+.blackbox-text h2 {
     color: #f37208;
     font-size: 1.8rem;
 }
@@ -215,7 +277,7 @@ hr {
         padding-bottom: 10rem;
     }
 
-    nav a{
+    nav a {
         display: none;
     }
 
@@ -247,5 +309,32 @@ hr {
         font-size: 3rem;
         line-height: 1;
         color: white;
+    }
+
+    .container {
+        padding: 0;
+        padding-bottom: 2rem;
+        margin-left: 1.3rem;
+        margin-right: 1.3rem;
+        margin-top: 2rem;
+    
+        animation-name: conteudo;
+        animation-duration: 2s;
+    }
+
+    #foto-cv {
+        width: 100%;
+        float: none;
+        margin-right: 1.5rem;
+        border-radius: 3rem;
+    }
+
+    #foto-cv2 {
+        text-align: center;
+    }
+
+    #sobre-mim {
+        text-align: left;
+        line-height: 1.6;
     }
 }
